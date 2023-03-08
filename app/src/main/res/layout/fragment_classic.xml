@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uvaBlack"
+    tools:context=".ui.theWay.TheWayFragment">
+
+    <TextView
+        android:id="@+id/tvSelectCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvCards"
+        tools:text="Elige tu carta" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnViewReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btnColor"
+        android:text="@string/btn_view_reading"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintBottom_toTopOf="@+id/tvSelectCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCards"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/tvSelectCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_cards" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageView
+        android:id="@+id/ivFive"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/shape_rectangle_cards"
+        app:layout_constraintBottom_toTopOf="@+id/rvCards"
+        app:layout_constraintEnd_toStartOf="@+id/ivTwo"
+        app:layout_constraintStart_toEndOf="@+id/ivOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivTwo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/shape_rectangle_cards"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivFive"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivOne"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/shape_rectangle_cards"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/ivFive"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="@+id/ivOne"
+        app:layout_constraintStart_toStartOf="@+id/ivOne"
+        app:layout_constraintTop_toBottomOf="@+id/ivOne" />
+
+    <TextView
+        android:id="@+id/tvTitleCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="@+id/ivFive"
+        app:layout_constraintStart_toStartOf="@+id/ivFive"
+        app:layout_constraintTop_toBottomOf="@+id/ivFive" />
+
+    <TextView
+        android:id="@+id/tvTitleRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="@+id/ivTwo"
+        app:layout_constraintStart_toStartOf="@+id/ivTwo"
+        app:layout_constraintTop_toBottomOf="@+id/ivTwo" />
+
+    <TextView
+        android:id="@+id/tvPutHereLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/text_put_here"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivOne"
+        app:layout_constraintEnd_toEndOf="@+id/ivOne"
+        app:layout_constraintStart_toStartOf="@+id/ivOne"
+        app:layout_constraintTop_toTopOf="@+id/ivOne" />
+
+    <TextView
+        android:id="@+id/tvPutHereCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/text_empty"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFive"
+        app:layout_constraintEnd_toEndOf="@+id/ivFive"
+        app:layout_constraintStart_toStartOf="@+id/ivFive"
+        app:layout_constraintTop_toTopOf="@+id/ivFive" />
+
+    <TextView
+        android:id="@+id/tvPutHereRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/text_empty"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTwo"
+        app:layout_constraintEnd_toEndOf="@+id/ivTwo"
+        app:layout_constraintStart_toStartOf="@+id/ivTwo"
+        app:layout_constraintTop_toTopOf="@+id/ivTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

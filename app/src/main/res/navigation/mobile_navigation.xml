@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.warriorsdev.tarot.ui.home.HomeFragment"
+        android:label="@string/title_tarot"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_the_way"
+            app:destination="@id/nav_the_way" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_classic"
+            app:destination="@id/nav_classic" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_one_card"
+            app:destination="@id/nav_one_card" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tarot_description"
+        android:name="com.warriorsdev.tarot.ui.seeReading.SeeReadingFragment"
+        android:label="@string/text_title_tarot_daily"
+        tools:layout="@layout/fragment_see_reading">
+        <argument
+            android:name="tarotCards"
+            app:argType="com.warriorsdev.tarot.ui.theWay.model.ItemCard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_the_way"
+        android:name="com.warriorsdev.tarot.ui.theWay.TheWayFragment"
+        android:label="@string/text_title_the_way"
+        tools:layout="@layout/fragment_the_way">
+        <action
+            android:id="@+id/action_nav_the_way_to_nav_tarot_description"
+            app:destination="@id/nav_tarot_description"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_classic"
+        android:name="com.warriorsdev.tarot.ui.classic.ClassicFragment"
+        android:label="@string/text_title_classic"
+        tools:layout="@layout/fragment_classic">
+        <action
+            android:id="@+id/action_nav_classic_to_nav_tarot_description"
+            app:destination="@id/nav_tarot_description"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_one_card"
+        android:name="com.warriorsdev.tarot.ui.oneCard.OneCardFragment"
+        android:label="@string/text_title_one_card"
+        tools:layout="@layout/fragment_one_card">
+        <action
+            android:id="@+id/action_nav_one_card_to_nav_tarot_description"
+            app:destination="@id/nav_tarot_description"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+</navigation>

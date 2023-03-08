@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_collections"
+            android:icon="@drawable/ic_account_balance"
+            android:title="@string/menu_collections" />
+        <item
+            android:id="@+id/nav_topics"
+            android:icon="@drawable/ic_view_carousel"
+            android:title="@string/menu_topics" />
+        <item
+            android:id="@+id/nav_science"
+            android:icon="@drawable/ic_science"
+            android:title="@string/menu_experiments" />
+
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_downloads"
+                android:enabled="false"
+                android:icon="@drawable/ic_download"
+                android:title="@string/menu_downloads" />
+            <item
+                android:id="@+id/nav_notifications"
+                android:icon="@drawable/ic_notifications_active"
+                android:title="@string/menu_notifications" />
+            <item
+                android:id="@+id/nav_post_comments"
+                android:icon="@drawable/ic_comments"
+                android:title="@string/menu_post_comments" />
+            <item
+                android:id="@+id/nav_About"
+                android:icon="@drawable/ic_info"
+                android:title="@string/menu_About" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tarot</string>
+
+    <string name="app_notification">App Notification</string>
+    <string name="app_notification_chanel_id">12345</string>
+    <string name="app_notification_description_first">Realiza tu primera lectura presionando Aquí</string>
+    <string name="app_notification_description_second">Realiza tu segunda lectura presionando Aquí</string>
+    <string name="app_notification_description_count">Realiza tu lectura %s presionando Aquí</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">Pamela Lazarte</string>
+    <string name="nav_header_subtitle">pamela@techtoserve.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_info">Información</string>
+    <string name="action_share">Compartir</string>
+
+    <string name="content_description">content_description</string>
+
+    <string name="menu_collections">Colecciones </string>
+    <string name="menu_topics">Temas</string>
+    <string name="menu_experiments">Experimentos</string>
+    <string name="menu_downloads">Descargas</string>
+    <string name="menu_notifications">Notificaciones</string>
+    <string name="menu_post_comments">Enviar Comentarios</string>
+    <string name="menu_About">Acerca de</string>
+
+    <string name="text_title">Lorem Ipsum</string>
+    <string name="text_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+    <string name="text_tarot_one">Si buscas una reflexión o un consejo que te ayude a responder lo que anhelas saber. Esta tirada a una carta te dará las pautas que necesitas.</string>
+    <string name="text_tarot_two">La tirada de 3 cartas te da una visión más amplia y completa para responder a tus dudas.</string>
+    <string name="text_tarot_three">Cuatro cartas que dibujan una senda. Las cartas de Marsella te señalan los primeros pasos, cuál es el desarrollo a tomar, el acercamiento a una solución y una reflexión.</string>
+
+    <string name="title_tarot">Tarot Marsella</string>
+
+    <string name="text_title_tarot_daily">Tarot Diario</string>
+    <string name="text_title_the_way">El camino</string>
+    <string name="text_title_classic">Tirada Clásica</string>
+    <string name="text_title_one_card">Tirada a una carta</string>
+    <string name="btn_view_reading">Ver Lectura</string>
+    <string name="text_put_here">Coloca aquí</string>
+    <string name="text_empty" />
+</resources>
